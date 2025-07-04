@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div id="footer-container" className={styles.footerContainer}>
       <footer className={styles.footer}>
-        
+
         {/* Colonna 1 - Informazioni di contatto */}
         <div className={styles.colonna1}>
           <div className={styles.logofooter}>

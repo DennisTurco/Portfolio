@@ -9,7 +9,7 @@ export interface WhyRow {
     };
     altText?: string;
   }
-  
+
   export interface WhyData {
     title: string;
     description: string;

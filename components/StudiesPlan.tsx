@@ -64,7 +64,7 @@ export default function StudyPlan() {
         <div className={styles.diploma}>
         <a href="/doc/diploma.pdf" title="degree" target="_blank">
           <strong>Diploma delle superiori</strong>
-          
+
             <i className="material-icons">file_download</i>
           </a>
         </div>

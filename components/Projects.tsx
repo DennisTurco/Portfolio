@@ -32,8 +32,8 @@ const projects = [
   {
     "title": "Backup Manager",
     "description": "Questo programma con una moderna interfaccia grafica ti consente di eseguire automaticamente il backup di cartelle e sottocartelle.",
-    "image": "/images/projects/logo3.png",
-    "link": "https://github.com/DennisTurco/AutoBackupProgram",
+    "image": "/images/projects/logo3.webp",
+    "link": "https://github.com/DennisTurco/BackupManager",
     "languages": ["Java"],
     "year": "2022 - 2025",
     "github": "https://github.com/DennisTurco/AutoBackupProgram"
@@ -59,7 +59,7 @@ const projects = [
   {
     "title": "Minesweeper Game",
     "description": "Classico gioco del Campo Minato realizzato in Java.",
-    "image": "/images/projects/logo4.png",
+    "image": "/images/projects/logo4.webp",
     "link": "https://github.com/DennisTurco/Minesweeper-Game",
     "languages": ["Java"],
     "year": "2022",

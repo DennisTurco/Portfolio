@@ -14,17 +14,17 @@ const HeroPortfolio = () => {
     <section className={styles.heroSection}>
       <div className={styles.container}>
         {/* Sezione Sinistra: Foto e Nome */}
-        <div 
-          className={styles.left} 
-          data-aos="fade-right" 
+        <div
+          className={styles.left}
+          data-aos="fade-right"
           data-aos-duration="800"
         >
           <div className={styles.imageWrapper}>
             <Image
-              src="/images/photo.png"
+              src="/images/photo.webp"
               alt="Profilo"
-              width={200} 
-              height={200} 
+              width={200}
+              height={200}
               className={styles.profileImage}
             />
           </div>
@@ -41,7 +41,7 @@ const HeroPortfolio = () => {
 
           <p className={styles.description}>
             Ciao e benvenuto nella mia pagina web! <br />
-            Sono <strong>Dennis Turco</strong>, nato il <strong>04/08/2001</strong> a Fidenza (una piccola città in provincia di Parma, Italia), dove attualmente risiedo.
+            Sono <strong>Dennis Turco</strong>, nato il <strong>08/04/2001</strong> a Fidenza (una piccola città in provincia di Parma, Italia), dove attualmente risiedo.
           </p>
 
           <p className={styles.description}>

@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import styles from "../styles/WorkExperience.module.scss";
+import Image from "next/image";
 
 const experiences = [
   {
@@ -39,7 +40,7 @@ const experiences = [
     title: "Insegnante Privato",
     company: "SuperProf",
     duration: "In corso",
-    year: "Dal 2021",
+    year: "2021 - Presente",
     description:
       "Fornisco lezioni private di Matematica e Programmazione.",
   },
@@ -79,9 +80,26 @@ const ExperienceSection = () => {
         <i className="material-icons" title="career">work</i> Carriera
       </h2>
 
+      <div className={styles.avatarWrapper}>
+        <Image
+          src="/images/action_figure.png" 
+          alt="Action Figure"
+          width={400}
+          height={500}
+          className={styles.avatar}
+        />
+      </div>
+
       <div className={styles.cv}>
-          <a href="/doc/curriculum.pdf" title="degree" target="_blank">
+          <a href="/doc/curriculum.pdf" title="curriculum" target="_blank">
             <strong>Curriculum Vitae (ultima modifica 2025)</strong>
+            <i className="material-icons">file_download</i>
+          </a>
+      </div>
+
+      <div className={styles.cv}>
+          <a href="/doc/cisita.pdf" title="attestato" target="_blank">
+            <strong>Attestato Cisita 2024</strong>
             <i className="material-icons">file_download</i>
           </a>
       </div>

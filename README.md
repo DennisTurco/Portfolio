@@ -7,8 +7,12 @@ This is a website that i designed and created for:
 - link my main projects;
 - link social media where you can find me;
 
-## Execute locally
-Command: `npm run dev`
+# Run the project
+`npx run dev`
+
+# Packages to install
+- `npm install sass`
+
 
 ## Licence
 

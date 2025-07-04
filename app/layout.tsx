@@ -15,7 +15,7 @@ export const metadata = {
     title: "Dennis Turco | Backend Developer & Insegnante",
     description:
       "Scopri il portfolio di Dennis Turco, sviluppatore backend esperto in Java e C#, e insegnante di programmazione.",
-    images: [{ url: "https://dennisturco.com/images/photo.png" }],
+    images: [{ url: "https://dennisturco.com/images/photo.webp" }],
     url: "https://dennisturco.com",
     type: "website",
   },
@@ -29,7 +29,7 @@ const schema = {
   name: "Dennis Turco",
   url: "https://dennisturco.com",
   logo: "https://dennisturco.com/images/logo.webp",
-  image: "https://dennisturco.com/images/photo.png",
+  image: "https://dennisturco.com/images/photo.webp",
   description:
     "Sviluppatore backend esperto in Java e C#, con esperienza nell'insegnamento della programmazione.",
   telephone: "+39 342 166 6192",
@@ -62,7 +62,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <Script
           async
           strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=G-NYX0XE2QG7`}
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}`}
         />
         <Script
           id="google-analytics"
@@ -72,7 +72,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-NYX0XE2QG7', {
+              gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}', {
                 page_path: window.location.pathname,
               });
             `,
