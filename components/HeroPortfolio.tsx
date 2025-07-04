@@ -32,13 +32,13 @@ const HeroPortfolio = () => {
         </div>
 
         {/* Sezione Destra: Descrizione */}
-        <div 
-          className={styles.right} 
-          data-aos="fade-left" 
+        <div
+          className={styles.right}
+          data-aos="fade-left"
           data-aos-duration="800"
         >
           <h2 className={styles.title}> <i className="material-icons" title="chi sono">fingerprint</i> Chi sono</h2>
-          
+
           <p className={styles.description}>
             Ciao e benvenuto nella mia pagina web! <br />
             Sono <strong>Dennis Turco</strong>, nato il <strong>04/08/2001</strong> a Fidenza (una piccola città in provincia di Parma, Italia), dove attualmente risiedo.
