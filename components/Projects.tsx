@@ -27,13 +27,13 @@ type ProjectsProps = {
   }
 };
 
-function isProject(value: any): value is Project {
+function isProject(value: unknown): value is Project {
   return (
-    value &&
     typeof value === 'object' &&
+    value !== null &&
     'title' in value &&
     'link' in value &&
-    (typeof value.link === 'string' || typeof value.link === 'function')
+    (typeof (value as any).link === 'string' || typeof (value as any).link === 'function')
   );
 }
 
