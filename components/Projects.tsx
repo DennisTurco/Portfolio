@@ -28,22 +28,28 @@ type ProjectsProps = {
 };
 
 function isProject(value: unknown): value is Project {
-  return (
+  if (
     typeof value === 'object' &&
     value !== null &&
     'title' in value &&
-    'link' in value &&
-    (typeof (value as any).link === 'string' || typeof (value as any).link === 'function')
-  );
+    'link' in value
+  ) {
+    const val = value as Record<string, unknown>;
+    return (
+      typeof val.link === 'string' || typeof val.link === 'function'
+    );
+  }
+  return false;
 }
 
 export default function Projects({ dictionary }: ProjectsProps) {
   const t = dictionary.projects;
   const projectsArray = Object.entries(t)
   .filter(([key, value]) => key !== "title" && key !== "note" && isProject(value))
-  .map(([, project]) => {
-    const link = typeof project.link === 'function' ? project.link('') : project.link;
-    return { ...project, link }; // Now `link` is always string here
+    .map(([, project]) => {
+    const p = project as Project;  // assert here
+    const link = typeof p.link === 'function' ? p.link('') : p.link;
+    return { ...p, link };
   });
 
 
