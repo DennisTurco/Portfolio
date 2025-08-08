@@ -1,0 +1,225 @@
+{
+    "footer": {
+        "contacts": "CONTACTS"
+    },
+    "hero": {
+        "whoami": "Who I am",
+        "intro1": "Hi and welcome to my personal web page!",
+        "intro2": "I'm Dennis Turco, born on 08/04/2001 in Fidenza (a small town in the province of Parma, Italy), where I currently live.",
+        "education": "I hold a degree in Computer Science from the University of Parma.",
+        "passion": "I'm passionate about technology and constantly eager to learn and explore new challenges.",
+        "team": "I love working in teams but I'm also perfectly capable of working independently.",
+        "career": "Career",
+        "projects": "Projects",
+        "services": "Services",
+        "study": "Study",
+        "contact": "CONTACT ME"
+    },
+    "work": {
+        "title": "Career",
+        "cv": "Curriculum Vitae (last updated 2025)",
+        "cisita": "Cisita Certificate 2024",
+        "work_animatore": {
+            "title": "Summer Camp Animator",
+            "location": "Fornio (PR)",
+            "description": "Worked full-time as an animator at a summer camp.",
+            "year": "2019",
+            "duration": "1 month"
+        },
+        "work_consegne": {
+            "title": "Delivery Guy",
+            "location": "Pizzeria (Fidenza)",
+            "description": "Worked on-call as a delivery driver.",
+            "year": "2020/21",
+            "duration": "1 year and 6 months"
+        },
+        "work_universita": {
+            "title": "University",
+            "location": "University of Parma",
+            "description": "Graduated in Computer Science with a score of 100/110.",
+            "year": "2020 - 2023",
+            "duration": "3 years"
+        },
+        "work_superprof": {
+            "title": "Private Tutor",
+            "location": "SuperProf",
+            "description": "Providing private lessons in Mathematics and Programming.",
+            "year": "2021 - Present",
+            "duration": "Ongoing"
+        },
+        "work_personalizzalo": {
+            "title": "Web Designer Intern",
+            "location": "Company in Piacenza",
+            "description": "Worked as a Front-End Developer during a full-time internship.",
+            "year": "2021",
+            "duration": "2 weeks"
+        },
+        "work_insegnantecoordinatore": {
+            "title": "Teacher and Coordinator",
+            "location": "Association in Fidenza",
+            "description": "Worked part-time as a teacher in an afterschool program, conducting educational activities.",
+            "year": "2021/22",
+            "duration": "6 months"
+        },
+        "work_tirocinio": {
+            "title": "Full-Stack Developer Intern",
+            "location": "University Internship",
+            "description": "Developed a .NET MVC 6.0 web application using C#, SQL, HTML, CSS, and JavaScript.",
+            "year": "2023",
+            "duration": "90 days"
+        },
+        "work_isolutions": {
+            "title": "Full-Stack Developer",
+            "location": "ISolutions (Noceto)",
+            "description": "Currently employed full-time as a Software Developer.",
+            "year": "2023 - Present",
+            "duration": "Ongoing"
+        }
+    },
+    "projects": {
+        "title": "Main Projects",
+        "note": "Only some projects are shown. To see the full list, visit",
+        "simfinance": {
+            "title": "Sim Finance",
+            "description": "Website developed as a tool to simulate retirement outcomes based on your personal financial situation.",
+            "image": "/images/projects/logo6.png",
+            "link": "https://simfinance.streamlit.app/",
+            "languages": [
+                "Python"
+            ],
+            "year": "2025",
+            "github": "https://github.com/DennisTurco/SimFinance"
+        },
+        "remindme": {
+            "title": "Remind Me",
+            "description": "This program, with a modern customized graphical interface, allows you to schedule recurring reminders. It features an elegant and contemporary design, combining refinement with friendliness.",
+            "image": "/images/projects/logo5.png",
+            "link": "https://dennis-turco.itch.io/remind-me",
+            "languages": [
+                "Java"
+            ],
+            "year": "2025",
+            "github": "https://github.com/DennisTurco/RemindMe"
+        },
+        "fusaecaffe": {
+            "title": "Fusa & Caffè",
+            "description": "Dynamic website developed in Next.js to showcase Fusa & Caffè’s magical place for enjoying good coffee in the company of cats.",
+            "image": "https://www.fusacafe.it/_next/image?url=%2Fimages%2Flogo.webp&w=256&q=75",
+            "link": "https://fusacafe.it/",
+            "languages": [
+                "Typescript, SCSS"
+            ],
+            "year": "2025",
+            "github": "https://github.com/DennisTurco/FusaCafe"
+        },
+        "backupmanager": {
+            "title": "Backup Manager",
+            "description": "This program with a modern graphical interface allows you to automatically back up folders and subfolders.",
+            "image": "/images/projects/logo3.webp",
+            "link": "https://github.com/DennisTurco/BackupManager",
+            "languages": [
+                "Java"
+            ],
+            "year": "2022 - 2025",
+            "github": "https://github.com/DennisTurco/AutoBackupProgram"
+        },
+        "calendardatamanager": {
+            "title": "Calendar Data Manager",
+            "description": "This program, with a simple graphical interface, lets you efficiently manage Google Calendar events.",
+            "image": "/images/projects/logo2.png",
+            "link": "https://github.com/DennisTurco/Calendar-Data-Manager",
+            "languages": [
+                "Python"
+            ],
+            "year": "2023 - 2024",
+            "github": "https://github.com/DennisTurco/Calendar-Data-Manager"
+        },
+        "impararefacile": {
+            "title": "Learn Easy",
+            "description": "Website dedicated to publishing documentation aimed at explaining programming and math concepts clearly and concisely.",
+            "image": "/images/projects/logo1.png",
+            "link": "https://dennisturco.github.io/ImparareFacile/",
+            "languages": [
+                "HTML",
+                "CSS"
+            ],
+            "year": "2022 - 2024",
+            "github": "https://github.com/DennisTurco/ImparareFacile"
+        },
+        "minesweeper": {
+            "title": "Minesweeper Game",
+            "description": "Classic Minesweeper game implemented in Java.",
+            "image": "/images/projects/logo4.webp",
+            "link": "https://github.com/DennisTurco/Minesweeper-Game",
+            "languages": [
+                "Java"
+            ],
+            "year": "2022",
+            "github": "https://github.com/DennisTurco/Minesweeper-Game"
+        }
+    },
+    "services": {
+        "title": "My Services",
+        "subtitle": "I offer advanced skills in software development, website creation, and programming training.",
+        "contact": "Contact me",
+        "softwaredeveloper": {
+            "title": "Software Development",
+            "description": "I offer custom software development services tailored to your needs, using languages such as Java and C#. I create scalable, high-performance, and secure applications, ensuring clean and maintainable code.",
+            "icon": "code",
+            "email_subject": "Software%20Development%20Request"
+        },
+        "webdeveloper": {
+            "title": "Web Development",
+            "description": "I build modern, responsive websites using technologies like HTML, CSS, JavaScript, and frameworks such as Next.js. I ensure high performance, SEO optimization, and attractive design.",
+            "icon": "public",
+            "email_subject": "Web%20Development%20Request"
+        },
+        "teacher": {
+            "title": "Programming Instructor",
+            "description": "I share my experience teaching programming to students and professionals. I offer personalized lessons on Java, C#, HTML, CSS, JavaScript, and other technologies, both online and in person.",
+            "icon": "school",
+            "email_subject": "Programming%20Lessons%20Request"
+        }
+    },
+    "education": {
+        "title": "Education",
+        "diploma": "High School Diploma",
+        "exams": {
+            "title": "University Exams",
+            "examcolumn": "Exam",
+            "statuscolumn": "Completed",
+            "year1": [
+                "Computer Architecture",
+                "Programming Fundamentals A",
+                "Analysis 1",
+                "General Physics",
+                "Programming Fundamentals B",
+                "Algebra and Geometry",
+                "Algorithms and Data Structures",
+                "English B1"
+            ],
+            "year2": [
+                "Operating Systems",
+                "Information Systems",
+                "Elements of Probability",
+                "Databases",
+                "Numerical Calculus",
+                "Fundamentals of Computer Science",
+                "Algorithms and Data Structures Lab",
+                "Programming Methodologies",
+                "IT and Cloud Systems Administration"
+            ],
+            "year3": [
+                "Chemistry",
+                "Software Engineering",
+                "Computer Networks",
+                "LaTeX",
+                "Information Systems and Business Management",
+                "Artificial Intelligence",
+                "Parallel Programming and HPC",
+                "Final Project (Thesis)",
+                "Internship"
+            ]
+        }
+    }
+}

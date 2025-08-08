@@ -30,11 +30,9 @@ const ContactForm = () => {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-    
         const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
         const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
         const userId = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
-    
         // Verifica che le variabili non siano undefined
         if (!serviceId || !templateId || !userId) {
             console.error("Missing required EmailJS environment variables.");

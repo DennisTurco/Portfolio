@@ -1,88 +1,103 @@
+'use client';
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import styles from "../styles/WorkExperience.module.scss";
 import Image from "next/image";
 
-const experiences = [
-  {
-    title: "Sviluppatore Software",
-    company: "ISolutions (Noceto)",
-    duration: "In corso",
-    year: "2023 - Presente",
-    description: "Attualmente impiegato a tempo pieno come Sviluppatore Software.",
-  },
-  {
-    title: "Tirocinante Web Developer",
-    company: "Tirocinio Universitario",
-    duration: "90 giorni",
-    year: "2023",
-    description:
-      "Sviluppata un'applicazione web .NET MVC 6.0 utilizzando C#, SQL, HTML, CSS e JavaScript.",
-  },
-  {
-    title: "Insegnante e Coordinatore",
-    company: "Associazione di Fidenza",
-    duration: "6 mesi",
-    year: "2021/22",
-    description:
-      "Lavorato part-time come insegnante in un doposcuola, conducendo attività educative.",
-  },
-  {
-    title: "Tirocinante Web Designer",
-    company: "Azienda di Piacenza",
-    duration: "2 settimane",
-    year: "2021",
-    description:
-      "Lavorato come Front-End Developer durante un tirocinio a tempo pieno.",
-  },
-  {
-    title: "Insegnante Privato",
-    company: "SuperProf",
-    duration: "In corso",
-    year: "2021 - Presente",
-    description:
-      "Fornisco lezioni private di Matematica e Programmazione.",
-  },
-  {
-    title: "Università",
-    company: "Università di Parma",
-    duration: "3 anni",
-    year: "2020 - 2023",
-    description:
-      "Laureato in Informatica con un punteggio di 100/110.",
-  },
-  {
-    title: "Ragazzo delle Consegne",
-    company: "Pizzeria (Fidenza)",
-    duration: "1 anno e 6 mesi",
-    year: "2020/21",
-    description: "Lavorato su chiamata come addetto alle consegne.",
-  },
-  {
-    title: "Animatore Centro Estivo",
-    company: "Fornio (PR)",
-    duration: "1 mese",
-    year: "2019",
-    description: "Lavorato a tempo pieno come animatore presso un centro estivo.",
-  },
-];
+type WorkExperienceProps = {
+  dictionary: {
+    work: {
+      title: string;
+      cv: string;
+      cisita: string;
+      work_animatore: {
+        title: string,
+        location: string,
+        description: string,
+        year: string,
+        duration: string
+      },
+      work_consegne: {
+        title: string,
+        location: string,
+        description: string,
+        year: string,
+        duration: string
+      },
+      work_universita: {
+        title: string,
+        location: string,
+        description: string,
+        year: string,
+        duration: string
+      },
+      work_superprof: {
+        title: string,
+        location: string,
+        description: string,
+        year: string,
+        duration: string
+      },
+      work_personalizzalo: {
+        title: string,
+        location: string,
+        description: string,
+        year: string,
+        duration: string
+      },
+      work_insegnantecoordinatore: {
+        title: string,
+        location: string,
+        description: string,
+        year: string,
+        duration: string
+      },
+      work_tirocinio: {
+        title: string,
+        location: string,
+        description: string,
+        year: string,
+        duration: string
+      },
+      work_isolutions: {
+        title: string,
+        location: string,
+        description: string,
+        year: string,
+        duration: string
+      }
+    };
+  };
+};
 
-const ExperienceSection = () => {
+const ExperienceSection = ({ dictionary }: WorkExperienceProps) => {
   useEffect(() => {
-    AOS.init();
+    AOS.init({ duration: 600, once: true });
   }, []);
+
+  const t = dictionary.work;
+
+  const experiences = [
+    t.work_isolutions,
+    t.work_tirocinio,
+    t.work_insegnantecoordinatore,
+    t.work_personalizzalo,
+    t.work_superprof,
+    t.work_universita,
+    t.work_consegne,
+    t.work_animatore,
+  ];
 
   return (
     <section className={styles.experienceSection} id="experience">
-      {/* Titolo della sezione con icona */}
       <h2 className={styles.title}>
-        <i className="material-icons" title="career">work</i> Carriera
+        <i className="material-icons" title="career">work</i> {t.title}
       </h2>
 
       <div className={styles.avatarWrapper}>
         <Image
-          src="/images/action_figure.png" 
+          src="/images/action_figure.png"
           alt="Action Figure"
           width={400}
           height={500}
@@ -91,17 +106,17 @@ const ExperienceSection = () => {
       </div>
 
       <div className={styles.cv}>
-          <a href="/doc/curriculum.pdf" title="curriculum" target="_blank">
-            <strong>Curriculum Vitae (ultima modifica 2025)</strong>
-            <i className="material-icons">file_download</i>
-          </a>
+        <a href="/doc/curriculum.pdf" title={t.cv} target="_blank" rel="noopener noreferrer">
+          <strong>{t.cv}</strong>
+          <i className="material-icons">file_download</i>
+        </a>
       </div>
 
       <div className={styles.cv}>
-          <a href="/doc/cisita.pdf" title="attestato" target="_blank">
-            <strong>Attestato Cisita 2024</strong>
-            <i className="material-icons">file_download</i>
-          </a>
+        <a href="/doc/cisita.pdf" title={t.cisita} target="_blank" rel="noopener noreferrer">
+          <strong>{t.cisita}</strong>
+          <i className="material-icons">file_download</i>
+        </a>
       </div>
 
       <div className={styles.timeline}>
@@ -110,7 +125,6 @@ const ExperienceSection = () => {
             key={index}
             className={styles.timelineItem}
             data-aos="fade-up"
-            data-aos-duration="600"
           >
             <div className={styles.date}>
               <span className={styles.year}>{exp.year}</span>
@@ -118,7 +132,7 @@ const ExperienceSection = () => {
             </div>
             <div className={styles.content}>
               <h3 className={styles.position}>{exp.title}</h3>
-              <h4 className={styles.company}>{exp.company}</h4>
+              <h4 className={styles.company}>{exp.location}</h4>
               <p className={styles.description}>{exp.description}</p>
             </div>
           </div>
@@ -129,3 +143,4 @@ const ExperienceSection = () => {
 };
 
 export default ExperienceSection;
+

@@ -41,13 +41,22 @@ const schema = {
   ],
 };
 
-interface RootLayoutProps {
-  children: React.ReactNode;
+
+export async function generateStaticParams() {
+  return [{ lang: "it" }, { lang: "en" }];
 }
 
-export default function RootLayout({ children }: RootLayoutProps) {
+export default async function RootLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode;
+  params: { lang: string };
+}) {
+  const { lang } = await params;
+
   return (
-    <html lang="it">
+    <html lang={lang}>
       <head>
         {/* Favicon */}
         <link rel="shortcut icon" href="/favicon.ico" />
@@ -93,7 +102,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             __html: `
               function googleTranslateElementInit() {
                 new google.translate.TranslateElement(
-                  { pageLanguage: 'it', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+                  { pageLanguage: '${lang}', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
                   'google_translate_element'
                 );
               }
@@ -108,7 +117,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body className={GeistSans.className} suppressHydrationWarning={true}>
         {children}
 
-        {/* Buy Me a Coffee */}
+        {/* Buy Me a Coffee (disabilitato) */}
         {/* <div id="buy-me-coffee-container">
           <script data-name="BMC-Widget" data-cfasync="false"
             src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="denno"
@@ -125,3 +134,4 @@ export default function RootLayout({ children }: RootLayoutProps) {
     </html>
   );
 }
+

@@ -1,78 +1,64 @@
+'use client';
 import { useState } from "react";
 import { CheckCircle } from "lucide-react";
 import styles from "../styles/StudyPlan.module.scss";
 
-interface Exam {
+type StudiesPlanProps = {
+  dictionary: {
+    education: {
+      title: string;
+      diploma: string;
+      exams: {
+        title: string;
+        examcolumn: string;
+        statuscolumn: string;
+        year1: string[];
+        year2: string[];
+        year3: string[];
+      };
+    };
+  };
+};
+
+type ExamYear = {
   year: string;
   subjects: string[];
-}
+};
 
-const exams: Exam[] = [
-  {
-    year: "Anno 1",
-    subjects: [
-      "Architettura degli Elaboratori",
-      "Fondamenti di Programmazione A",
-      "Analisi 1",
-      "Fisica Generale",
-      "Fondamenti di Programmazione B",
-      "Algebra e Geometria",
-      "Algoritmi e Strutture Dati",
-      "Inglese B1",
-    ],
-  },
-  {
-    year: "Anno 2",
-    subjects: [
-      "Sistemi Operativi",
-      "Sistemi Informativi",
-      "Elementi di Probabilità",
-      "Basi di Dati",
-      "Calcolo Numerico",
-      "Fondamenti dell'Informatica",
-      "Laboratorio di Algoritmi e Strutture Dati",
-      "Metodologie di Programmazione",
-      "Amministrazione di Sistemi IT e Cloud",
-    ],
-  },
-  {
-    year: "Anno 3",
-    subjects: [
-      "Chimica",
-      "Ingegneria Del Software",
-      "Reti di Calcolatori",
-      "LaTeX",
-      "Sistemi Informativi e Gestione d'Impresa",
-      "Intelligenza Artificiale",
-      "Programmazione Parallela e HPC",
-      "Prova Finale (Tesi)",
-      "Tirocinio",
-    ],
-  },
-];
+const StudyPlan = ({ dictionary }: StudiesPlanProps) => {
+  const t = dictionary.education;
+  const [activeTab, setActiveTab] = useState<string>("Year 1");
 
-export default function StudyPlan() {
-  const [activeTab, setActiveTab] = useState<string>("Anno 1");
+  // Prepare exam years data for easier mapping
+  const exams: ExamYear[] = [
+    { year: "Year 1", subjects: t.exams.year1 },
+    { year: "Year 2", subjects: t.exams.year2 },
+    { year: "Year 3", subjects: t.exams.year3 },
+  ];
 
   return (
     <>
-      {/* Sezione superiore */}
+      {/* Header section */}
       <div className={styles.header}>
         <h2 className={styles.title}>
-          <i className="material-icons" title="education">school</i> Educazione
+          <i className="material-icons" title="education">
+            school
+          </i>{" "}
+          {t.title}
         </h2>
         <div className={styles.diploma}>
-        <a href="/doc/diploma.pdf" title="degree" target="_blank">
-          <strong>Diploma delle superiori</strong>
-
-            <i className="material-icons">file_download</i>
+          <a href="/doc/diploma.pdf" title="degree" target="_blank" rel="noopener noreferrer">
+            <strong>{t.diploma}</strong>{" "}
+            <i className="material-icons" aria-label="Download diploma file">
+              file_download
+            </i>
           </a>
         </div>
       </div>
 
-      {/* Card con gli esami */}
+      {/* Exams card */}
       <div className={styles.studyPlan}>
-        <h2 className={styles.subtitle}>Esami Universitari</h2>
+        <h2 className={styles.subtitle}>{t.exams.title}</h2>
 
         {/* Tabs */}
         <div className={styles.tabs}>
@@ -87,19 +73,25 @@ export default function StudyPlan() {
           ))}
         </div>
 
-        {/* Contenuto */}
+        {/* Tab content */}
         {exams.map(({ year, subjects }) => (
-          <div key={year} className={`${styles.tabContent} ${activeTab === year ? styles.active : ""}`}>
+          <div
+            key={year}
+            className={`${styles.tabContent} ${activeTab === year ? styles.active : ""}`}
+          >
             <table className={styles.table}>
               <thead>
                 <tr>
-                  <th>Esame</th>
-                  <th>Completato</th>
+                  <th>{t.exams.examcolumn}</th>
+                  <th>{t.exams.statuscolumn}</th>
                 </tr>
               </thead>
               <tbody>
                 {subjects.map((subject, index) => (
-                  <tr key={subject} className={index % 2 === 0 ? styles.rowEven : styles.rowOdd}>
+                  <tr
+                    key={subject}
+                    className={index % 2 === 0 ? styles.rowEven : styles.rowOdd}
+                  >
                     <td>{subject}</td>
                     <td className={styles.checkIcon}>
                       <CheckCircle size={24} />
@@ -113,4 +105,6 @@ export default function StudyPlan() {
       </div>
     </>
   );
-}
+};
+
+export default StudyPlan;

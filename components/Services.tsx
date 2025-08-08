@@ -1,36 +1,40 @@
 import Link from "next/link";
 import styles from "../styles/Services.module.scss";
 
-const services = [
-  {
-    title: "Sviluppo Software",
-    description:
-      "Offro servizi di sviluppo software su misura per le tue esigenze, utilizzando linguaggi come Java e C#. Creo applicazioni scalabili, performanti e sicure, garantendo un codice pulito e manutenibile.",
-    icon: "code",
-    emailSubject: "Richiesta%20Sviluppo%20Software",
-  },
-  {
-    title: "Sviluppo di Siti Web",
-    description:
-      "Realizzo siti web moderni e responsive, utilizzando tecnologie come HTML, CSS, JavaScript e framework come Next.js. Garantisco performance elevate, ottimizzazione SEO e un design accattivante.",
-    icon: "public",
-    emailSubject: "Richiesta%20Sviluppo%20Siti%20Web",
-  },
-  {
-    title: "Insegnante di Programmazione",
-    description:
-      "Condivido la mia esperienza insegnando programmazione a studenti e professionisti. Offro lezioni personalizzate su Java, C#, HTML, CSS, JavaScript e altre tecnologie, sia online che in presenza.",
-    icon: "school",
-    emailSubject: "Richiesta%20Lezioni%20di%20Programmazione",
-  },
-];
+type Service = {
+  title: string;
+  description: string;
+  icon: string;
+  email_subject: string;
+};
 
-export default function ServicesPage() {
+type ServicesProps = {
+  dictionary: {
+    services: {
+      title: string;
+      subtitle: string;
+      contact: string;
+      softwaredeveloper: Service;
+      webdeveloper: Service;
+      teacher: Service;
+    };
+  };
+};
+
+const ServicesPage = ({ dictionary }: ServicesProps) => {
+  const t = dictionary.services;
+
+  const services: Service[] = [
+    t.softwaredeveloper,
+    t.webdeveloper,
+    t.teacher,
+  ];
+
   return (
     <section className={styles.servicesContainer}>
-      <h2 className={styles.title}>I miei Servizi</h2>
+      <h2 className={styles.title}><i className="material-icons">build</i> {t.title}</h2>
       <p className={styles.subtitle}>
-        Offro competenze avanzate nello sviluppo software, creazione di siti web e formazione in programmazione.
+        {t.subtitle}
       </p>
 
       <div className={styles.servicesGrid}>
@@ -39,10 +43,18 @@ export default function ServicesPage() {
             <i className="material-icons">{service.icon}</i>
             <h2>{service.title}</h2>
             <p>{service.description}</p>
-            <Link href={`mailto:dennisturco@gmail.com?subject=${service.emailSubject}`} target="_blank" className={styles.contactButton}> Contattami </Link>
+            <Link
+              href={`mailto:dennisturco@gmail.com?subject=${service.email_subject}`}
+              target="_blank"
+              className={styles.contactButton}
+            >
+              {t.contact}
+            </Link>
           </div>
         ))}
       </div>
     </section>
   );
-}
+};
+
+export default ServicesPage;

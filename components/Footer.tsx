@@ -3,7 +3,18 @@ import { FaMobileAlt, FaLocationArrow, FaEnvelope } from "react-icons/fa";
 import Image from 'next/image';
 import Link from 'next/link';
 
-const Footer = () => {
+type FooterProps = {
+  dictionary: {
+    footer: {
+      contacts: string;
+    };
+  };
+};
+
+const Footer = ({ dictionary }: FooterProps) => {
+
+  const t = dictionary.footer;
+
   return (
     <div id="footer-container" className={styles.footerContainer}>
       <footer className={styles.footer}>
@@ -22,7 +33,7 @@ const Footer = () => {
         {/* Colonna 2 - Social e Contatti */}
         <div className={styles.colonna2}>
           <div className={styles.contactsFooter}>
-            <h1 className={styles.contactsHeader}>CONTATTI</h1>
+            <h1 className={styles.contactsHeader}>{t.contacts}</h1>
             <div className={styles.icons}>
               <Link href="https://discordapp.com/invite/kbZVz3m" target="_blank">
                 <Image src="/images/discord.svg" alt="Discord" width={50} height={50} />

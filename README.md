@@ -12,6 +12,8 @@ This is a website that i designed and created for:
 
 # Packages to install
 - `npm install sass`
+- `npm install negotiator @formatjs/intl-localematcher`
+
 
 
 ## Licence

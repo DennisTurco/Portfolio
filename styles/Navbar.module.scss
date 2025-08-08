@@ -1,25 +1,25 @@
 @use "resolution" as *;
 
 .navbar {
-  width: 100%;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: var(--navbar-bg);
-  filter: blur(0.5px);
-  -webkit-filter: blur(0.5px); /* Safari */
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+  width: 100%;
+  background-color: var(--navbar-bg);
   opacity: 0.9;
-  z-index: 1;
   transition: 0.5s;
+  z-index: 1000;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  filter: blur(0.5px);
+  -webkit-filter: blur(0.5px); /* Safari */
+  position: relative;
 
   &:hover {
     opacity: 1;
-    filter: blur(0px);
-    -webkit-filter: blur(0px); /* Safari */
+    filter: blur(0);
+    -webkit-filter: blur(0); /* Safari */
   }
 
   @media (max-width: $media-mobile) {
@@ -27,36 +27,55 @@
   }
 }
 
-.navbar li {
-  float: left;
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: inherit;
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+  opacity: 0.9;
+  pointer-events: none;
+  z-index: -1;
 }
 
-.navbar li a {
+.navList {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.navList li {
+  margin-right: 1rem; /* spazio tra icone */
+  font-size: 24px;
+}
+
+.navList li a {
   display: block;
   color: var(--navbar-text);
   text-align: center;
   padding: 16px 18px;
+  transition: background-color 1s;
 
   &:hover {
-    transition: 1s;
     background-color: #111;
-    filter: blur(0px);
-    -webkit-filter: blur(0px); /* Safari */
+    filter: blur(0);
+    -webkit-filter: blur(0);
   }
 
   i {
     font-size: 24px;
+    transition: font-size 0.3s;
   }
 
-  &:hover i {
-    font-size: 26px;
-  }
-}
-
-#school {
-  padding-right: 20px;
+  // &:hover i {
+  //   font-size: 26px;
+  // }
 }
 
 .right {
-  float: right;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
 }

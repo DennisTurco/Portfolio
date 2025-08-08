@@ -1,0 +1,225 @@
+{
+  "footer": {
+    "contacts": "CONTATTI"
+  },
+  "hero": {
+    "whoami": "Chi sono",
+    "intro1": "Ciao e benvenuto nella mia pagina web!",
+    "intro2": "Sono Dennis Turco, nato il 08/04/2001 a Fidenza (una piccola città in provincia di Parma, Italia), dove attualmente risiedo.",
+    "education": "Sono laureato in Informatica presso l'Università di Parma.",
+    "passion": "Ho una grande passione per la tecnologia e una costante voglia di imparare ed esplorare nuove sfide.",
+    "team": "Amo lavorare in team, ma sono anche perfettamente in grado di lavorare in autonomia.",
+    "career": "Carriera",
+    "projects": "Progetti",
+    "services": "Servizi",
+    "study": "Studio",
+    "contact": "CONTATTAMI"
+  },
+  "work": {
+    "title": "Carriera",
+    "cv": "Curriculum Vitae (ultima modifica 2025)",
+    "cisita": "Attestato Cisita 2024",
+    "work_animatore": {
+      "title": "Animatore Centro Estivo",
+      "location": "Fornio (PR)",
+      "description": "Lavorato a tempo pieno come animatore presso un centro estivo.",
+      "year": "2019",
+      "duration": "1 mese"
+    },
+    "work_consegne": {
+      "title": "Ragazzo delle Consegne",
+      "location": "Pizzeria (Fidenza)",
+      "description": "Lavorato su chiamata come addetto alle consegne.",
+      "year": "2020/21",
+      "duration": "1 anno e 6 mesi"
+    },
+    "work_universita": {
+      "title": "Università",
+      "location": "Università di Parma",
+      "description": "Laureato in Informatica con un punteggio di 100/110.",
+      "year": "2020 - 2023",
+      "duration": "3 anni"
+    },
+    "work_superprof": {
+      "title": "Insegnante Privato",
+      "location": "SuperProf",
+      "description": "Fornisco lezioni private di Matematica e Programmazione.",
+      "year": "2021 - Presente",
+      "duration": "In corso"
+    },
+    "work_personalizzalo": {
+      "title": "Tirocinante Web Designer",
+      "location": "Azienda di Piacenza",
+      "description": "Lavorato come Front-End Developer durante un tirocinio a tempo pieno.",
+      "year": "2021",
+      "duration": "2 settimane"
+    },
+    "work_insegnantecoordinatore": {
+      "title": "Insegnante e Coordinatore",
+      "location": "Associazione di Fidenza",
+      "description": "Lavorato part-time come insegnante in un doposcuola, conducendo attività educative.",
+      "year": "2021/22",
+      "duration": "6 mesi"
+    },
+    "work_tirocinio": {
+      "title": "Tirocinante Full-Stack Developer",
+      "location": "Tirocinio Universitario",
+      "description": "Sviluppata un'applicazione web .NET MVC 6.0 utilizzando C#, SQL, HTML, CSS e JavaScript.",
+      "year": "2023",
+      "duration": "90 giorni"
+    },
+    "work_isolutions": {
+      "title": "Sviluppatore Full-Stack Developer",
+      "location": "ISolutions (Noceto)",
+      "description": "Attualmente impiegato a tempo pieno come Sviluppatore Software.",
+      "year": "2023 - Presente",
+      "duration": "In corso"
+    }
+  },
+  "projects": {
+    "title": "Progetti Principali",
+    "note": "Sono mostrati solo alcuni progetti. Per vedere la lista completa visitare",
+    "simfinance": {
+      "title": "Sim Finance",
+      "description": "Sito sviluppato come tool per ottenere una simulazione fino alla pensione in base alla propria situazione economica",
+      "image": "/images/projects/logo6.png",
+      "link": "https://simfinance.streamlit.app/",
+      "languages": [
+        "Python"
+      ],
+      "year": "2025",
+      "github": "https://github.com/DennisTurco/SimFinance"
+    },
+    "remindme": {
+      "title": "Remind Me",
+      "description": "Questo programma, con una moderna interfaccia grafica personalizzata, ti consente di programmare promemoria ricorrenti. Offre una grafica elegante e contemporanea, dallo stile raffinato ma allo stesso tempo amichevole.",
+      "image": "/images/projects/logo5.png",
+      "link": "https://dennis-turco.itch.io/remind-me",
+      "languages": [
+        "Java"
+      ],
+      "year": "2025",
+      "github": "https://github.com/DennisTurco/RemindMe"
+    },
+    "fusaecaffe": {
+      "title": "Fusa & Caffè",
+      "description": "Sito web dinamico sviluppato in Next.js per permettere all'attività Fusa & Caffè di mostrare il proprio magico posto per bere un buon caffè in compagnia dei gatti.",
+      "image": "https://www.fusacafe.it/_next/image?url=%2Fimages%2Flogo.webp&w=256&q=75",
+      "link": "https://fusacafe.it/",
+      "languages": [
+        "Typescript, SCSS"
+      ],
+      "year": "2025",
+      "github": "https://github.com/DennisTurco/FusaCafe"
+    },
+    "backupmanager": {
+      "title": "Backup Manager",
+      "description": "Questo programma con una moderna interfaccia grafica ti consente di eseguire automaticamente il backup di cartelle e sottocartelle.",
+      "image": "/images/projects/logo3.webp",
+      "link": "https://github.com/DennisTurco/BackupManager",
+      "languages": [
+        "Java"
+      ],
+      "year": "2022 - 2025",
+      "github": "https://github.com/DennisTurco/AutoBackupProgram"
+    },
+    "calendardatamanager": {
+      "title": "Calendar Data Manager",
+      "description": "Questo programma, con una semplice interfaccia grafica, ti permette di gestire gli eventi di Google Calendar in modo efficace.",
+      "image": "/images/projects/logo2.png",
+      "link": "https://github.com/DennisTurco/Calendar-Data-Manager",
+      "languages": [
+        "Python"
+      ],
+      "year": "2023 - 2024",
+      "github": "https://github.com/DennisTurco/Calendar-Data-Manager"
+    },
+    "impararefacile": {
+      "title": "Imparare Facile",
+      "description": "Sito web dedicato alla pubblicazione di documentazione finalizzata a spiegare concetti di programmazione e matematica in modo chiaro e conciso.",
+      "image": "/images/projects/logo1.png",
+      "link": "https://dennisturco.github.io/ImparareFacile/",
+      "languages": [
+        "HTML",
+        "CSS"
+      ],
+      "year": "2022 - 2024",
+      "github": "https://github.com/DennisTurco/ImparareFacile"
+    },
+    "minesweeper": {
+      "title": "Minesweeper Game",
+      "description": "Classico gioco del Campo Minato realizzato in Java.",
+      "image": "/images/projects/logo4.webp",
+      "link": "https://github.com/DennisTurco/Minesweeper-Game",
+      "languages": [
+        "Java"
+      ],
+      "year": "2022",
+      "github": "https://github.com/DennisTurco/Minesweeper-Game"
+    }
+  },
+  "services": {
+    "title": "I miei Servizi",
+    "subtitle": "Offro competenze avanzate nello sviluppo software, creazione di siti web e formazione in programmazione.",
+    "contact": "Contattami",
+    "softwaredeveloper": {
+      "title": "Sviluppo Software",
+      "description": "Offro servizi di sviluppo software su misura per le tue esigenze, utilizzando linguaggi come Java e C#. Creo applicazioni scalabili, performanti e sicure, garantendo un codice pulito e manutenibile.",
+      "icon": "code",
+      "email_subject": "Richiesta%20Sviluppo%20Software"
+    },
+    "webdeveloper": {
+      "title": "Sviluppo di Siti Web",
+      "description": "Realizzo siti web moderni e responsive, utilizzando tecnologie come HTML, CSS, JavaScript e framework come Next.js. Garantisco performance elevate, ottimizzazione SEO e un design accattivante.",
+      "icon": "public",
+      "email_subject": "Richiesta%20Sviluppo%20Siti%20Web"
+    },
+    "teacher": {
+      "title": "Insegnante di Programmazione",
+      "description": "Condivido la mia esperienza insegnando programmazione a studenti e professionisti. Offro lezioni personalizzate su Java, C#, HTML, CSS, JavaScript e altre tecnologie, sia online che in presenza.",
+      "icon": "school",
+      "email_subject": "Richiesta%20Lezioni%20di%20Programmazione"
+    }
+  },
+  "education": {
+    "title": "Educazione",
+    "diploma": "Diploma delle superiori",
+    "exams": {
+      "title": "Esami Universitari",
+      "examcolumn": "Esame",
+      "statuscolumn": "Completato",
+      "year1": [
+        "Architettura degli Elaboratori",
+        "Fondamenti di Programmazione A",
+        "Analisi 1",
+        "Fisica Generale",
+        "Fondamenti di Programmazione B",
+        "Algebra e Geometria",
+        "Algoritmi e Strutture Dati",
+        "Inglese B1"
+      ],
+      "year2": [
+        "Sistemi Operativi",
+        "Sistemi Informativi",
+        "Elementi di Probabilità",
+        "Basi di Dati",
+        "Calcolo Numerico",
+        "Fondamenti dell'Informatica",
+        "Laboratorio di Algoritmi e Strutture Dati",
+        "Metodologie di Programmazione",
+        "Amministrazione di Sistemi IT e Cloud"
+      ],
+      "year3": [
+        "Chimica",
+        "Ingegneria Del Software",
+        "Reti di Calcolatori",
+        "LaTeX",
+        "Sistemi Informativi e Gestione d'Impresa",
+        "Intelligenza Artificiale",
+        "Programmazione Parallela e HPC",
+        "Prova Finale (Tesi)",
+        "Tirocinio"
+      ]
+    }
+  }
+}
