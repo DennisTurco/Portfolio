@@ -2,13 +2,13 @@ import styles from "@/styles/Projects.module.scss";
 import { FaGithub, FaGlobe } from 'react-icons/fa';
 
 type Project = {
-  title: string,
-  description: string,
-  image: string,
-  link: string,
-  languages: string[],
-  year: string,
-  github: string
+  title: string;
+  description: string;
+  image: string;
+  link: string | ((url: string) => string);
+  languages: string[];
+  year: string;
+  github: string;
 };
 
 type ProjectsProps = {
@@ -27,11 +27,25 @@ type ProjectsProps = {
   }
 };
 
+function isProject(value: any): value is Project {
+  return (
+    value &&
+    typeof value === 'object' &&
+    'title' in value &&
+    'link' in value &&
+    (typeof value.link === 'string' || typeof value.link === 'function')
+  );
+}
+
 export default function Projects({ dictionary }: ProjectsProps) {
   const t = dictionary.projects;
- const projectsArray = Object.entries(t)
-  .filter(([key]) => key !== "title" && key !== "note")
-  .map(([, project]) => project);
+  const projectsArray = Object.entries(t)
+  .filter(([key, value]) => key !== "title" && key !== "note" && isProject(value))
+  .map(([, project]) => {
+    const link = typeof project.link === 'function' ? project.link('') : project.link;
+    return { ...project, link }; // Now `link` is always string here
+  });
+
 
   return (
     <section id="projects" className={styles.projectsSection}>
