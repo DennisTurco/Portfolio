@@ -5,8 +5,8 @@ import { useState, useEffect, useRef } from "react";
 import styles from "../styles/LangSwitcher.module.scss";
 
 const LANGS = [
-  { code: "it", label: "Italiano", flag: "🇮🇹" },
-  { code: "en", label: "English", flag: "🇬🇧" },
+  { code: "it", label: "Italiano", flag: "/images//flags/ita.png" },
+  { code: "en", label: "English", flag: "/images//flags/eng.png" },
 ];
 
 export default function LangSwitcher() {
@@ -28,7 +28,8 @@ export default function LangSwitcher() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const currentLang = LANGS.find((l) => pathname.startsWith(`/${l.code}`)) || LANGS[0];
+  const currentLang =
+    LANGS.find((l) => pathname.startsWith(`/${l.code}`)) || LANGS[0];
 
   function changeLanguage(lang: string) {
     document.cookie = `NEXT_LOCALE=${lang}; path=/; max-age=31536000`;
@@ -45,23 +46,31 @@ export default function LangSwitcher() {
         aria-haspopup="listbox"
         aria-expanded={open}
       >
-        <span>{currentLang.flag}</span> {currentLang.label} ▼
+        <img
+          src={currentLang.flag}
+          alt={currentLang.label}
+          className={styles.flag}
+        />
       </button>
 
       {open && (
-        <ul role="listbox" tabIndex={-1} className={styles.dropdown}>
+        <ul role="listbox" className={styles.dropdown}>
           {LANGS.filter((l) => l.code !== currentLang.code).map((lang) => (
             <li
               key={lang.code}
               role="option"
               onClick={() => changeLanguage(lang.code)}
               className={styles.option}
+              tabIndex={0}
               onKeyDown={(e) => {
                 if (e.key === "Enter" || e.key === " ") changeLanguage(lang.code);
               }}
-              tabIndex={0}
             >
-              {lang.flag} {lang.label}
+              <img
+                src={lang.flag}
+                alt={lang.label}
+                className={styles.flag}
+              />
             </li>
           ))}
         </ul>
