@@ -80,6 +80,9 @@ $logo-size: 50px;
     justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
+    img {
+      filter: brightness(0) invert(1) brightness(0.8);
+    }
   }
 
   a {
