@@ -4,26 +4,26 @@ import { GeistSans } from "geist/font/sans";
 import Script from "next/script";
 import "/styles/global.scss";
 
-export const metadata = {
-  title: "Dennis Turco | Backend Developer & Insegnante",
-  description:
-    "Scopri il portfolio di Dennis Turco, sviluppatore backend esperto in Java e C#, e insegnante di programmazione.",
-  keywords:
-    "Dennis Turco, sviluppatore backend, Java, C#, insegnante di programmazione, software engineer, coding, sviluppo software",
-  authors: [{ name: "Dennis Turco" }],
-  openGraph: {
-    title: "Dennis Turco | Backend Developer & Insegnante",
+const metadataByLang = {
+  it: {
+    title: "Dennis Turco | Sviluppatore Backend & Insegnante",
     description:
       "Scopri il portfolio di Dennis Turco, sviluppatore backend esperto in Java e C#, e insegnante di programmazione.",
-    images: [{ url: "https://dennisturco.com/images/photo.webp" }],
-    url: "https://dennisturco.com",
-    type: "website",
+    keywords:
+      "Dennis Turco, sviluppatore backend, Java, C#, insegnante di programmazione, software engineer, coding, sviluppo software",
+  },
+  en: {
+    title: "Dennis Turco | Backend Developer & Teacher",
+    description:
+      "Discover the portfolio of Dennis Turco, an experienced backend developer in Java and C#, and programming teacher.",
+    keywords:
+      "Dennis Turco, backend developer, Java, C#, programming teacher, software engineer, coding, software development",
   },
 };
 
 export const viewport = "width=device-width, initial-scale=1.0";
 
-const schema = {
+const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Dennis Turco",
@@ -41,6 +41,18 @@ const schema = {
   ],
 };
 
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Dennis Turco Portfolio",
+  url: "https://dennisturco.com",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: "https://dennisturco.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string",
+  },
+};
+
 
 export async function generateStaticParams() {
   return [{ lang: "it" }, { lang: "en" }];
@@ -54,17 +66,55 @@ export default async function RootLayout({
   params: { lang: string };
 }) {
   const { lang } = await params;
+  const meta = metadataByLang[lang as keyof typeof metadataByLang] || metadataByLang.it;
 
   return (
     <html lang={lang}>
       <head>
+        {/* Base Meta */}
+        <title>{meta.title}</title>
+        <meta name="description" content={meta.description} />
+        <meta name="keywords" content={meta.keywords} />
+        <meta name="author" content="Dennis Turco" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        {/* hreflang per SEO multilingua */}
+        <link rel="alternate" href="https://dennisturco.com/it" hrefLang="it" />
+        <link rel="alternate" href="https://dennisturco.com/en" hrefLang="en" />
+        <link
+          rel="alternate"
+          href="https://dennisturco.com"
+          hrefLang="x-default"
+        />
+
+        {/* Open Graph */}
+        <meta property="og:title" content={meta.title} />
+        <meta property="og:description" content={meta.description} />
+        <meta
+          property="og:image"
+          content="https://dennisturco.com/images/photo.webp"
+        />
+        <meta property="og:url" content="https://dennisturco.com" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={meta.title} />
+        <meta name="twitter:description" content={meta.description} />
+        <meta
+          name="twitter:image"
+          content="https://dennisturco.com/images/photo.webp"
+        />
+
         {/* Favicon */}
         <link rel="shortcut icon" href="/favicon.ico" />
 
         {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([personSchema, websiteSchema]),
+          }}
         />
 
         {/* Google Analytics */}
@@ -92,26 +142,6 @@ export default async function RootLayout({
         <link
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet"
-        />
-
-        {/* Google Translate */}
-        <Script
-          id="google-translate"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              function googleTranslateElementInit() {
-                new google.translate.TranslateElement(
-                  { pageLanguage: '${lang}', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
-                  'google_translate_element'
-                );
-              }
-            `,
-          }}
-        />
-        <Script
-          src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-          strategy="afterInteractive"
         />
       </head>
       <body className={GeistSans.className} suppressHydrationWarning={true}>
