@@ -21,7 +21,7 @@ type ProjectsProps = {
       fusaecaffe: Project,
       backupmanager: Project,
       calendardatamanager: Project,
-      impararefacile: Project,
+      appuntifacili: Project,
       minesweeper: Project,
     }
   }

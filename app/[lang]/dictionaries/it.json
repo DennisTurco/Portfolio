@@ -134,17 +134,16 @@
       "year": "2023 - 2024",
       "github": "https://github.com/DennisTurco/Calendar-Data-Manager"
     },
-    "impararefacile": {
-      "title": "Imparare Facile",
+    "appuntifacili": {
+      "title": "Appunti Facili",
       "description": "Sito web dedicato alla pubblicazione di documentazione finalizzata a spiegare concetti di programmazione e matematica in modo chiaro e conciso.",
       "image": "/images/projects/logo1.png",
-      "link": "https://dennisturco.github.io/ImparareFacile/",
+      "link": "https://appuntifacili.it/",
       "languages": [
-        "HTML",
-        "CSS"
+        "Astro"
       ],
       "year": "2022 - 2024",
-      "github": "https://github.com/DennisTurco/ImparareFacile"
+      "github": "https://github.com/DennisTurco/AppuntiFacili"
     },
     "minesweeper": {
       "title": "Minesweeper Game",
