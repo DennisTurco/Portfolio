@@ -17,7 +17,7 @@
     },
     "work": {
         "title": "Career",
-        "cv": "Curriculum Vitae (last updated 2025)",
+        "cv": "Curriculum Vitae (last updated 08-09-2025)",
         "cisita": "Cisita Certificate 2024",
         "work_animatore": {
             "title": "Summer Camp Animator",
@@ -116,12 +116,12 @@
             "title": "Backup Manager",
             "description": "This program with a modern graphical interface allows you to automatically back up folders and subfolders.",
             "image": "/images/projects/logo3.webp",
-            "link": "https://github.com/DennisTurco/BackupManager",
+            "link": "https://dennis-turco.itch.io/backup-manager",
             "languages": [
                 "Java"
             ],
             "year": "2022 - 2025",
-            "github": "https://github.com/DennisTurco/AutoBackupProgram"
+            "github": "https://github.com/DennisTurco/BackupManager"
         },
         "calendardatamanager": {
             "title": "Calendar Data Manager",
