@@ -5,10 +5,10 @@
     "hero": {
         "whoami": "Who I am",
         "intro1": "Hi and welcome to my personal web page!",
-        "intro2": "I'm Dennis Turco, born on 08/04/2001 in Fidenza (a small town in the province of Parma, Italy), where I currently live.",
-        "education": "I hold a degree in Computer Science from the University of Parma.",
-        "passion": "I'm passionate about technology and constantly eager to learn and explore new challenges.",
-        "team": "I love working in teams but I'm also perfectly capable of working independently.",
+        "intro2": "I'm Dennis Turco, a Junior Full-Stack Developer from Fidenza (Parma, Italy).",
+        "education": "I hold a Bachelor's degree in Computer Science from the University of Parma.",
+        "passion": "I am a clean code enthusiast, passionate about technology, software design, and continuous learning.",
+        "team": "I enjoy collaborative teamwork while also working effectively and independently.",
         "career": "Career",
         "projects": "Projects",
         "services": "Services",
@@ -17,7 +17,7 @@
     },
     "work": {
         "title": "Career",
-        "cv": "Curriculum Vitae (last updated 2025)",
+        "cv": "Curriculum Vitae (last updated 11-05-2026)",
         "cisita": "Cisita Certificate 2024",
         "work_animatore": {
             "title": "Summer Camp Animator",
@@ -64,14 +64,14 @@
         "work_tirocinio": {
             "title": "Full-Stack Developer Intern",
             "location": "University Internship",
-            "description": "Developed a .NET MVC 6.0 web application using C#, SQL, HTML, CSS, and JavaScript.",
+            "description": "Developed a .NET MVC 6.0 web application using C#, SQL, HTML, CSS, and JavaScript, gaining practical experience in full-stack development.",
             "year": "2023",
             "duration": "90 days"
         },
         "work_isolutions": {
             "title": "Full-Stack Developer",
             "location": "ISolutions (Noceto)",
-            "description": "Currently employed full-time as a Software Developer.",
+            "description": "Full-time Software Developer working mainly with .NET technologies, contributing to feature development, maintenance, and code quality improvements within an Agile team.",
             "year": "2023 - Present",
             "duration": "Ongoing"
         }
@@ -79,57 +79,42 @@
     "projects": {
         "title": "Main Projects",
         "note": "Only some projects are shown. To see the full list, visit",
-        "simfinance": {
-            "title": "Sim Finance",
-            "description": "Website developed as a tool to simulate retirement outcomes based on your personal financial situation.",
-            "image": "/images/projects/logo6.png",
-            "link": "https://simfinance.streamlit.app/",
-            "languages": [
-                "Python"
-            ],
-            "year": "2025",
-            "github": "https://github.com/DennisTurco/SimFinance"
-        },
-        "remindme": {
-            "title": "Remind Me",
-            "description": "This program, with a modern customized graphical interface, allows you to schedule recurring reminders. It features an elegant and contemporary design, combining refinement with friendliness.",
-            "image": "/images/projects/logo5.png",
-            "link": "https://dennis-turco.itch.io/remind-me",
-            "languages": [
-                "Java"
-            ],
-            "year": "2025",
-            "github": "https://github.com/DennisTurco/RemindMe"
-        },
-        "fusaecaffe": {
-            "title": "Fusa & Caffè",
-            "description": "Dynamic website developed in Next.js to showcase Fusa & Caffè’s magical place for enjoying good coffee in the company of cats.",
-            "image": "https://www.fusacafe.it/_next/image?url=%2Fimages%2Flogo.webp&w=256&q=75",
-            "link": "https://fusacafe.it/",
-            "languages": [
-                "Typescript, SCSS"
-            ],
-            "year": "2025",
-            "github": "https://github.com/DennisTurco/FusaCafe"
-        },
         "backupmanager": {
             "title": "Backup Manager",
-            "description": "This program with a modern graphical interface allows you to automatically back up folders and subfolders.",
+            "description": "Windows backup automation tool developed in Java with a Java Swing GUI and SQLite database for managing scheduled and manual backups.",
             "image": "/images/projects/logo3.webp",
             "link": "https://github.com/DennisTurco/BackupManager",
             "languages": [
-                "Java"
+                "Java",
+                "Java Swing",
+                "SQLite"
             ],
-            "year": "2022 - 2025",
+            "year": "2022 - 2026",
             "github": "https://github.com/DennisTurco/AutoBackupProgram"
+        },
+        "fusaecaffe": {
+            "title": "Fusa & Caffè",
+            "description": "Production website developed with Next.js for a local coffee shop, using Supabase as backend database and Sanity CMS for content management. Focused on performance, responsive design, and modern UI practices.",
+            "image": "https://www.fusacafe.it/_next/image?url=%2Fimages%2Flogo.webp&w=256&q=75",
+            "link": "https://fusacafe.it/",
+            "languages": [
+                "Next.js",
+                "TypeScript",
+                "SCSS",
+                "Supabase",
+                "Sanity CMS"
+            ],
+            "year": "2025 - 2026",
+            "github": "https://github.com/DennisTurco/FusaCafe"
         },
         "calendardatamanager": {
             "title": "Calendar Data Manager",
-            "description": "This program, with a simple graphical interface, lets you efficiently manage Google Calendar events.",
+            "description": "Python desktop application integrating Google Calendar APIs to manage and automate event organization through a graphical interface.",
             "image": "/images/projects/logo2.png",
             "link": "https://github.com/DennisTurco/Calendar-Data-Manager",
             "languages": [
-                "Python"
+                "Python",
+                "customtkinter"
             ],
             "year": "2023 - 2024",
             "github": "https://github.com/DennisTurco/Calendar-Data-Manager"
@@ -138,13 +123,39 @@
             "title": "Learn Easy",
             "description": "Website dedicated to publishing documentation aimed at explaining programming and math concepts clearly and concisely.",
             "image": "/images/projects/logo1.png",
-            "link": "https://dennisturco.github.io/ImparareFacile/",
+            "link": "https://appuntifacili.it",
             "languages": [
-                "HTML",
-                "CSS"
+                "Astro",
+                "TypeScript",
+                "SCSS",
+                "Supabase"
             ],
-            "year": "2022 - 2024",
-            "github": "https://github.com/DennisTurco/ImparareFacile"
+            "year": "2022 - 2026",
+            "github": "https://github.com/DennisTurco/AppuntiFacili"
+        },
+        "remindme": {
+            "title": "Remind Me",
+            "description": "This program, with a modern customized graphical interface, allows you to schedule recurring reminders. It features an elegant and contemporary design, combining refinement with friendliness.",
+            "image": "/images/projects/logo5.png",
+            "link": "https://dennis-turco.itch.io/remind-me",
+            "languages": [
+                "Java",
+                "Java Swing"
+            ],
+            "year": "2025",
+            "github": "https://github.com/DennisTurco/RemindMe"
+        },
+        "simfinance": {
+            "title": "Sim Finance",
+            "description": "Website developed as a tool to simulate retirement outcomes based on your personal financial situation.",
+            "image": "/images/projects/logo6.png",
+            "link": "https://simfinance.streamlit.app/",
+            "languages": [
+                "Python",
+                "streamlit"
+            ],
+            "year": "2025",
+            "github": "https://github.com/DennisTurco/SimFinance"
         },
         "minesweeper": {
             "title": "Minesweeper Game",
@@ -152,7 +163,8 @@
             "image": "/images/projects/logo4.webp",
             "link": "https://github.com/DennisTurco/Minesweeper-Game",
             "languages": [
-                "Java"
+                "Java",
+                "Java Swing"
             ],
             "year": "2022",
             "github": "https://github.com/DennisTurco/Minesweeper-Game"

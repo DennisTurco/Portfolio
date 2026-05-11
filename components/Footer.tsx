@@ -22,7 +22,7 @@ const Footer = ({ dictionary }: FooterProps) => {
         {/* Colonna 1 - Informazioni di contatto */}
         <div className={styles.colonna1}>
           <div className={styles.logofooter}>
-            <h3 className={styles.footerHeading}>&copy; 2022 - 2025 Dennis Turco</h3>
+            <h3 className={styles.footerHeading}>2022 - 2026 Dennis Turco</h3>
             <hr className={styles.footerHr} />
             <p><FaMobileAlt size={18} /> +39 342 166 6192</p>
             <p><FaEnvelope size={18} /> dennisturco@gmail.com</p>

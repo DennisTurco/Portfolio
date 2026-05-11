@@ -4,158 +4,171 @@
   },
   "hero": {
     "whoami": "Chi sono",
-    "intro1": "Ciao e benvenuto nella mia pagina web!",
-    "intro2": "Sono Dennis Turco, nato il 08/04/2001 a Fidenza (una piccola città in provincia di Parma, Italia), dove attualmente risiedo.",
+    "intro1": "Ciao e benvenuto nella mia pagina web personale!",
+    "intro2": "Sono Dennis Turco, Junior Full-Stack Developer di Fidenza (Parma, Italia).",
     "education": "Sono laureato in Informatica presso l'Università di Parma.",
-    "passion": "Ho una grande passione per la tecnologia e una costante voglia di imparare ed esplorare nuove sfide.",
-    "team": "Amo lavorare in team, ma sono anche perfettamente in grado di lavorare in autonomia.",
+    "passion": "Sono un appassionato di clean code, tecnologia e progettazione software, con una costante voglia di imparare e migliorarmi.",
+    "team": "Mi trovo a mio agio nel lavoro di squadra ma opero efficacemente anche in autonomia.",
     "career": "Carriera",
     "projects": "Progetti",
     "services": "Servizi",
-    "study": "Studio",
+    "study": "Formazione",
     "contact": "CONTATTAMI"
   },
+
   "work": {
     "title": "Carriera",
-    "cv": "Curriculum Vitae (ultima modifica 2025)",
+    "cv": "Curriculum Vitae (aggiornato 11-05-2026)",
     "cisita": "Attestato Cisita 2024",
+
     "work_animatore": {
       "title": "Animatore Centro Estivo",
       "location": "Fornio (PR)",
-      "description": "Lavorato a tempo pieno come animatore presso un centro estivo.",
+      "description": "Attività svolta a tempo pieno come animatore presso un centro estivo.",
       "year": "2019",
       "duration": "1 mese"
     },
+
     "work_consegne": {
-      "title": "Ragazzo delle Consegne",
+      "title": "Addetto alle Consegne",
       "location": "Pizzeria (Fidenza)",
-      "description": "Lavorato su chiamata come addetto alle consegne.",
+      "description": "Lavoro su chiamata come addetto alle consegne.",
       "year": "2020/21",
       "duration": "1 anno e 6 mesi"
     },
+
     "work_universita": {
       "title": "Università",
       "location": "Università di Parma",
-      "description": "Laureato in Informatica con un punteggio di 100/110.",
+      "description": "Laurea in Informatica conseguita con votazione 100/110.",
       "year": "2020 - 2023",
       "duration": "3 anni"
     },
+
     "work_superprof": {
       "title": "Insegnante Privato",
       "location": "SuperProf",
-      "description": "Fornisco lezioni private di Matematica e Programmazione.",
+      "description": "Erogazione di lezioni private di Matematica e Programmazione con percorsi personalizzati.",
       "year": "2021 - Presente",
       "duration": "In corso"
     },
+
     "work_personalizzalo": {
       "title": "Tirocinante Web Designer",
       "location": "Azienda di Piacenza",
-      "description": "Lavorato come Front-End Developer durante un tirocinio a tempo pieno.",
+      "description": "Sviluppo di interfacce front-end durante tirocinio full-time, acquisendo esperienza pratica nello sviluppo web.",
       "year": "2021",
       "duration": "2 settimane"
     },
+
     "work_insegnantecoordinatore": {
       "title": "Insegnante e Coordinatore",
       "location": "Associazione di Fidenza",
-      "description": "Lavorato part-time come insegnante in un doposcuola, conducendo attività educative.",
+      "description": "Attività part-time in doposcuola con supporto educativo e coordinamento delle attività didattiche.",
       "year": "2021/22",
       "duration": "6 mesi"
     },
+
     "work_tirocinio": {
       "title": "Tirocinante Full-Stack Developer",
       "location": "Tirocinio Universitario",
-      "description": "Sviluppata un'applicazione web .NET MVC 6.0 utilizzando C#, SQL, HTML, CSS e JavaScript.",
+      "description": "Sviluppo di un'applicazione web .NET MVC 6.0 utilizzando C#, SQL, HTML, CSS e JavaScript, acquisendo esperienza concreta nello sviluppo full-stack.",
       "year": "2023",
       "duration": "90 giorni"
     },
+
     "work_isolutions": {
-      "title": "Sviluppatore Full-Stack Developer",
+      "title": "Full-Stack Developer",
       "location": "ISolutions (Noceto)",
-      "description": "Attualmente impiegato a tempo pieno come Sviluppatore Software.",
+      "description": "Sviluppatore Software full-time, impegnato nello sviluppo e manutenzione di applicazioni .NET, implementazione di nuove funzionalità e miglioramento della qualità del codice in ambiente Agile.",
       "year": "2023 - Presente",
       "duration": "In corso"
     }
   },
+
   "projects": {
     "title": "Progetti Principali",
-    "note": "Sono mostrati solo alcuni progetti. Per vedere la lista completa visitare",
-    "simfinance": {
-      "title": "Sim Finance",
-      "description": "Sito sviluppato come tool per ottenere una simulazione fino alla pensione in base alla propria situazione economica",
-      "image": "/images/projects/logo6.png",
-      "link": "https://simfinance.streamlit.app/",
-      "languages": [
-        "Python"
-      ],
-      "year": "2025",
-      "github": "https://github.com/DennisTurco/SimFinance"
+    "note": "Sono mostrati solo alcuni progetti. Per la lista completa visita",
+
+    "backupmanager": {
+      "title": "Backup Manager",
+      "description": "Strumento di automazione backup per Windows sviluppato in Java con interfaccia grafica Java Swing e database SQLite per la gestione di backup manuali e pianificati.",
+      "image": "/images/projects/logo3.webp",
+      "link": "https://github.com/DennisTurco/BackupManager",
+      "languages": ["Java", "Java Swing", "SQLite"],
+      "year": "2022 - 2026",
+      "github": "https://github.com/DennisTurco/AutoBackupProgram"
     },
-    "remindme": {
-      "title": "Remind Me",
-      "description": "Questo programma, con una moderna interfaccia grafica personalizzata, ti consente di programmare promemoria ricorrenti. Offre una grafica elegante e contemporanea, dallo stile raffinato ma allo stesso tempo amichevole.",
-      "image": "/images/projects/logo5.png",
-      "link": "https://dennis-turco.itch.io/remind-me",
-      "languages": [
-        "Java"
-      ],
-      "year": "2025",
-      "github": "https://github.com/DennisTurco/RemindMe"
-    },
+
     "fusaecaffe": {
       "title": "Fusa & Caffè",
-      "description": "Sito web dinamico sviluppato in Next.js per permettere all'attività Fusa & Caffè di mostrare il proprio magico posto per bere un buon caffè in compagnia dei gatti.",
+      "description": "Sito web professionale sviluppato con Next.js per una caffetteria locale, utilizzando Supabase come database backend e Sanity CMS per la gestione dei contenuti, con focus su performance, design responsive e moderne pratiche UI.",
       "image": "https://www.fusacafe.it/_next/image?url=%2Fimages%2Flogo.webp&w=256&q=75",
       "link": "https://fusacafe.it/",
       "languages": [
-        "Typescript, SCSS"
+        "Next.js",
+        "TypeScript",
+        "SCSS",
+        "Supabase",
+        "Sanity CMS"
       ],
-      "year": "2025",
+      "year": "2025 - 2026",
       "github": "https://github.com/DennisTurco/FusaCafe"
     },
-    "backupmanager": {
-      "title": "Backup Manager",
-      "description": "Questo programma con una moderna interfaccia grafica ti consente di eseguire automaticamente il backup di cartelle e sottocartelle.",
-      "image": "/images/projects/logo3.webp",
-      "link": "https://github.com/DennisTurco/BackupManager",
-      "languages": [
-        "Java"
-      ],
-      "year": "2022 - 2025",
-      "github": "https://github.com/DennisTurco/AutoBackupProgram"
-    },
+
     "calendardatamanager": {
       "title": "Calendar Data Manager",
-      "description": "Questo programma, con una semplice interfaccia grafica, ti permette di gestire gli eventi di Google Calendar in modo efficace.",
+      "description": "Applicazione desktop Python integrata con le API di Google Calendar per gestire e automatizzare l'organizzazione degli eventi.",
       "image": "/images/projects/logo2.png",
       "link": "https://github.com/DennisTurco/Calendar-Data-Manager",
-      "languages": [
-        "Python"
-      ],
+      "languages": ["Python", "customtkinter"],
       "year": "2023 - 2024",
       "github": "https://github.com/DennisTurco/Calendar-Data-Manager"
     },
     "impararefacile": {
-      "title": "Imparare Facile",
-      "description": "Sito web dedicato alla pubblicazione di documentazione finalizzata a spiegare concetti di programmazione e matematica in modo chiaro e conciso.",
-      "image": "/images/projects/logo1.png",
-      "link": "https://dennisturco.github.io/ImparareFacile/",
-      "languages": [
-        "HTML",
-        "CSS"
-      ],
-      "year": "2022 - 2024",
-      "github": "https://github.com/DennisTurco/ImparareFacile"
+        "title": "Appunti Facili",
+        "description": "Sito web dedicato alla pubblicazione di documentazione tecnica, con l'obiettivo di spiegare in modo chiaro e conciso concetti di programmazione e matematica.",
+        "image": "/images/projects/logo1.png",
+        "link": "https://appuntifacili.it",
+        "languages": [
+            "Astro",
+            "TypeScript",
+            "SCSS",
+            "Supabase"
+        ],
+        "year": "2022 - 2026",
+        "github": "https://github.com/DennisTurco/AppuntiFacili"
+    },
+    "remindme": {
+      "title": "Remind Me",
+      "description": "Applicazione desktop con interfaccia grafica personalizzata che consente la gestione di promemoria ricorrenti tramite notifiche automatiche.",
+      "image": "/images/projects/logo5.png",
+      "link": "https://dennis-turco.itch.io/remind-me",
+      "languages": ["Java"],
+      "year": "2025",
+      "github": "https://github.com/DennisTurco/RemindMe"
+    },
+
+    "simfinance": {
+      "title": "Sim Finance",
+      "description": "Applicazione web sviluppata per simulare scenari pensionistici sulla base della propria situazione finanziaria personale.",
+      "image": "/images/projects/logo6.png",
+      "link": "https://simfinance.streamlit.app/",
+      "languages": ["Python"],
+      "year": "2025",
+      "github": "https://github.com/DennisTurco/SimFinance"
     },
     "minesweeper": {
-      "title": "Minesweeper Game",
-      "description": "Classico gioco del Campo Minato realizzato in Java.",
-      "image": "/images/projects/logo4.webp",
-      "link": "https://github.com/DennisTurco/Minesweeper-Game",
-      "languages": [
-        "Java"
-      ],
-      "year": "2022",
-      "github": "https://github.com/DennisTurco/Minesweeper-Game"
+        "title": "Minesweeper Game",
+        "description": "Classico gioco del campo minato fatto in Java",
+        "image": "/images/projects/logo4.webp",
+        "link": "https://github.com/DennisTurco/Minesweeper-Game",
+        "languages": [
+            "Java",
+            "Java Swing"
+        ],
+        "year": "2022",
+        "github": "https://github.com/DennisTurco/Minesweeper-Game"
     }
   },
   "services": {
