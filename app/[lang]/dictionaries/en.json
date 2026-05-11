@@ -83,14 +83,14 @@
             "title": "Backup Manager",
             "description": "Windows backup automation tool developed in Java with a Java Swing GUI and SQLite database for managing scheduled and manual backups.",
             "image": "/images/projects/logo3.webp",
-            "link": "https://github.com/DennisTurco/BackupManager",
+            "link": "https://dennis-turco.itch.io/backup-manager",
             "languages": [
                 "Java",
                 "Java Swing",
                 "SQLite"
             ],
             "year": "2022 - 2026",
-            "github": "https://github.com/DennisTurco/AutoBackupProgram"
+            "github": "https://github.com/DennisTurco/BackupManager"
         },
         "fusaecaffe": {
             "title": "Fusa & Caffè",
@@ -119,8 +119,8 @@
             "year": "2023 - 2024",
             "github": "https://github.com/DennisTurco/Calendar-Data-Manager"
         },
-        "impararefacile": {
-            "title": "Learn Easy",
+        "appuntifacili": {
+            "title": "Appunti Facile",
             "description": "Website dedicated to publishing documentation aimed at explaining programming and math concepts clearly and concisely.",
             "image": "/images/projects/logo1.png",
             "link": "https://appuntifacili.it",

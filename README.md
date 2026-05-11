@@ -8,9 +8,10 @@ This is a website that i designed and created for:
 - link social media where you can find me;
 
 # Run the project
-`npx run dev`
+`npm run dev`
 
 # Packages to install
+- `npm install`
 - `npm install sass`
 - `npm install negotiator @formatjs/intl-localematcher`
 

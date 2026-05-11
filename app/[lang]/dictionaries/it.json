@@ -18,7 +18,7 @@
 
   "work": {
     "title": "Carriera",
-    "cv": "Curriculum Vitae (aggiornato 11-05-2026)",
+    "cv": "Curriculum Vitae (ultima modifica 11-05-2026)",
     "cisita": "Attestato Cisita 2024",
 
     "work_animatore": {
@@ -97,7 +97,7 @@
       "link": "https://github.com/DennisTurco/BackupManager",
       "languages": ["Java", "Java Swing", "SQLite"],
       "year": "2022 - 2026",
-      "github": "https://github.com/DennisTurco/AutoBackupProgram"
+      "github": "https://github.com/DennisTurco/BackupManager"
     },
 
     "fusaecaffe": {
@@ -115,7 +115,6 @@
       "year": "2025 - 2026",
       "github": "https://github.com/DennisTurco/FusaCafe"
     },
-
     "calendardatamanager": {
       "title": "Calendar Data Manager",
       "description": "Applicazione desktop Python integrata con le API di Google Calendar per gestire e automatizzare l'organizzazione degli eventi.",

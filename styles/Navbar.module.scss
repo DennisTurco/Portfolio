@@ -12,14 +12,10 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  filter: blur(0.5px);
-  -webkit-filter: blur(0.5px); /* Safari */
   position: relative;
 
   &:hover {
     opacity: 1;
-    filter: blur(0);
-    -webkit-filter: blur(0); /* Safari */
   }
 
   @media (max-width: $media-mobile) {
@@ -78,4 +74,26 @@
   margin-left: auto;
   display: flex;
   align-items: center;
+}
+
+
+@media (max-width: 600px) {
+  .navList {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navList li {
+    margin-right: 0.5rem;
+  }
+
+  .right {
+    margin-left: 0;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .right > * {
+    flex: 1 1 auto; 
+  }
 }

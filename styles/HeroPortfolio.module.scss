@@ -4,9 +4,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--background);
-  padding: 20px; // Aggiunto padding per evitare che il contenuto tocchi i bordi
+  padding: 20px;
+
+  @media (max-width: 768px) {
+    padding-top: 80px;   // spazio sufficiente sotto la navbar
+    padding-bottom: 40px; // spazio sufficiente sotto i pulsanti
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }
 
 .container {
@@ -114,17 +121,17 @@
   }
 }
 
-/* Miglioramenti pulsanti */
 .buttonGroup {
   margin-top: 20px;
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
-  justify-content: center; // Centra i pulsanti
+  justify-content: center;
 
   @media (max-width: 600px) {
-    flex-direction: column; // Disposizione verticale per evitare sovrapposizioni
+    flex-direction: column;
     align-items: center;
+    margin-bottom: 40px; // spazio extra sotto i pulsanti
   }
 }
 
@@ -151,4 +158,16 @@
   padding-top: 20px;
   border-top: 2px solid var(--accent);
   text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .heroSection {
+    padding-top: 120px; // abbassa immagine sotto la navbar
+    padding-bottom: 80px; // evita che i bottoni tocchino il footer
+  }
+
+  .buttonGroup {
+    margin-bottom: 40px; // spazio aggiuntivo sotto i bottoni
+  }
 }

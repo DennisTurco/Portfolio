@@ -1,51 +1,73 @@
-.container {
-  position: relative;
-  display: inline-block;
-  right: 5px;
-}
-
 .button {
-  cursor: pointer;
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  background: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  user-select: none;
+  background: white;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  min-width: 100px;  /* larghezza minima per il bottone */
+  justify-content: center;
+  padding: 0;
+}
+
+.flag {
+  object-fit: cover;
+  width: 100%;
 }
 
 .dropdown {
   position: absolute;
-  top: 100%;
+  top: 100%;      /* subito sotto il bottone */
   left: 0;
-  background: white;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-top: 4px;
-  list-style: none;
-  padding: 0;
+  transform: none;
+  display: flex;
+  flex-direction: column;
+  background: transparent; /* puoi cambiare se vuoi */
+  padding: 8px 0; /* piccolo padding verticale */
   z-index: 9999;
-  min-width: 130px;
-  max-width: 180px;  /* massimo */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.container {
+  position: relative;
+  display: inline-block;
 }
 
 .option {
-  padding: 0.4rem 0.8rem;
-  cursor: pointer;
-  user-select: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 16px !important;
+  justify-content: center;
+  background: white;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: transform 0.2s;
 
   &:hover,
   &:focus {
-    background-color: #f0f0f0;
+    transform: scale(1.2);
     outline: none;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .button {
+    width: 40px;       /* mantieni la dimensione circolare */
+    height: 40px;
+    padding: 0;
+  }
+
+  .dropdown {
+    top: 100%;         /* dropdown sotto il bottone anche su mobile */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .option {
+    width: 40px;       /* mantiene la forma circolare */
+    height: 40px;
+    padding: 0;        /* nessun padding extra */
   }
 }
